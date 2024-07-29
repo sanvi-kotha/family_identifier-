@@ -1,0 +1,30 @@
+.trained_members{
+    color:darkred;
+    border: 4px dotted lightcoral;
+    font-size: large;
+    
+}
+
+body {
+    background: rgba(240, 245, 209, 0.916);
+    color: lightpink;
+}
+
+.heading{
+    font-size: 27px;
+    width: 80%;
+}
+
+#out_put,#web_cam{
+border: 4px dotted rgba(176, 6, 6, 0.756);
+width: 300px;
+height: 300px;
+
+}
+label{
+    font-size: 22px;
+}
+
+#result_member_name,#result_accuracy_percentage{
+    color: darkcyan;
+}

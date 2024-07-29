@@ -1,0 +1,59 @@
+<html>
+    <head>
+<title>Family Recognition</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+<link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+    
+            <center>
+        
+              <h3 class = "btn btn-success heading">FAMILY RECOGNITION</h3>
+              <br><br>
+        
+              <p style="font-size: 22px; color: darkred;">Model is trained to identify the following members: </p>
+              <br>
+        
+              <b class = "trained_members">
+                Father
+                <hr>
+               Mother
+                <hr>
+                Sister
+                <hr>
+                Brother
+                 
+              </b>
+              <br>
+              <br>
+              <br>
+              <label>Webcam View - </label>
+              <div id="web_cam"></div>
+              <br><br>
+              <label>Image View - </label>
+              <div id="out_put">
+        
+                
+              </div>
+              <br><br>
+              <button class="btn btn-success" onclick = "capture_pic()">Capture Pic</button>
+              <br><br>
+              <button class="btn btn-success" onclick = "identify_pic()">Identify Object</button>
+              <br><br>
+        
+              <p style="font-size: 22px;">Member :  <span id = "result_member_name">Mom</span></p>
+              <p style="font-size: 22px;">Accuracy :  <span id = "result_accuracy_percentage">100%</span> </p>
+            </center>
+        
+          </div>
+        <script src="main.js"></script>
+    </body>
+</html>
